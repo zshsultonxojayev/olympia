@@ -1,3 +1,14 @@
+@media screen and (min-width: 2000px){
+    #actual_news_slider{
+        width: 2400px;
+        height: 900px;
+        margin: 0 auto;
+    }
+    #actual_news_slider .slider_img{
+        width: 2400px;
+        height: 900px;
+    }
+}
 @media screen and (max-width: 1800px){
     #actual_news_slider .slider_img{
         height: 600px;
@@ -667,9 +678,6 @@
     }
     .rules_b{
         padding: 40px 15px 60px 15px;
-    }
-    .register_list li{
-        width: 54%;
     }
 }
 @media screen and (max-width: 367px){

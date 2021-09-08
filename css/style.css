@@ -137,7 +137,8 @@ html, body{
     padding: 0 30px 0 0;
 }
 .main_menu .navbar-nav li a{
-    border-radius: 5px;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
     position: relative;
     font-size: 20px;
     font-family: "SegoeUI-Bold";
@@ -150,8 +151,9 @@ html, body{
 .main_menu .navbar-nav li.dropdown.open a,
 .main_menu .navbar-nav li a:focus,
 .main_menu .navbar-nav li a:hover{
-    background-color: rgba(1, 152, 71, 0.2);
+    background-color: transparent;
     outline: none;
+    border-color: #019847;
 }
 .main_menu .navbar-nav li.dropup.open .dropdown-menu li a,
 .main_menu .navbar-nav li.dropdown.open .dropdown-menu li a{
@@ -407,7 +409,7 @@ a.check_id:hover{
 .tabs_left{
     width: 100%;
     display: inline-flex;
-    margin: 20px 0;
+    margin: 20px 0 50px 0;
 }
 .tabs_left > .nav-tabs{
     background-color: #fff;
@@ -1095,11 +1097,14 @@ a.reg_link span.glyphicon{
     padding: 0 60px;
 }
 .contests_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     margin-bottom: 300px;
 }
 .contests_list li{
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
     width: 32.1%;
     margin: 10px 8px;

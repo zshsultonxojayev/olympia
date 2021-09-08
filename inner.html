@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link href="css/fancybox.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -140,9 +141,9 @@
         </section>
         <section class="news">
             <div class="container h_width">
-                    <span class="title">
-                        <i>Yangiliklar</i>
-                    </span>
+                <span class="title">
+                    <i>Yangiliklar</i>
+                </span>
                 <ul class="news_list">
                     <li>
                         <a href="#">Bugun, 25 mart kuni butun O'zbekiston bo'ylab Kenguru-2021 tanlovi bo'lib o'tdi!</a>
@@ -166,34 +167,34 @@
             </span>
             <div id="gallery_slider" class="owl-carousel">
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_1.jpg"></div>
+                    <a href="img/slider_img_1.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_1.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_2.jpg"></div>
+                    <a href="img/slider_img_2.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_2.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_3.jpg"></div>
+                    <a href="img/slider_img_3.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_3.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_4.jpg"></div>
+                    <a href="img/slider_img_4.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_4.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_5.jpg"></div>
+                    <a href="img/slider_img_5.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_5.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_1.jpg"></div>
+                    <a href="img/slider_img_1.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_1.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_2.jpg"></div>
+                    <a href="img/slider_img_2.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_2.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_3.jpg"></div>
+                    <a href="img/slider_img_3.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_3.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_4.jpg"></div>
+                    <a href="img/slider_img_4.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_4.jpg"></a>
                 </div>
                 <div class="item">
-                    <div class="slider_img"><img src="img/slider_img_5.jpg"></div>
+                    <a href="img/slider_img_5.jpg" data-fancybox="images" class="slider_img"><img src="img/slider_img_5.jpg"></a>
                 </div>
             </div>
         </section>
@@ -204,9 +205,9 @@
         </section>
         <section>
             <div class="container h_width">
-                <span class="title">
-                    <i>Rukunlar</i>
-                </span>
+                    <span class="title">
+                        <i>Rukunlar</i>
+                    </span>
                 <ul class="simple_list">
                     <li>
                         <a href="#">Ko‘p beriladigan savollar<img src="img/list_icon_1.png" alt="" /></a>
@@ -249,8 +250,8 @@
                     </li>
                 </ul>
                 <span class="footer_title">
-                        <i><a href="#"><img src="img/footer_logo.png" alt="" /></a></i>
-                    </span>
+                            <i><a href="#"><img src="img/footer_logo.png" alt="" /></a></i>
+                        </span>
                 <ul class="social_network">
                     <li>
                         <a href="#"><img src="img/facebook.png" alt="" /> Facebook</a>
@@ -276,6 +277,10 @@
 
     <script>
 
+        $(document).ready(function () {
+            $('[data-fancybox="images"]').fancybox();
+        });
+
         $("#gallery_slider").owlCarousel({
             loop: true,
             autoplay: true,
@@ -300,5 +305,7 @@
             pagination: false
         });
     </script>
+    <script src="js/fancybox.min.js"></script>
+
 
 </html>
