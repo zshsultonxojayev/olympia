@@ -250,22 +250,24 @@ a.enter_cab_link{
     padding: 12px 20px;
     font-family: "SegoeUI";
     font-size: 20px;
-    color: #019847;
+    color: #fff;
     line-height: 1.3;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     margin-left: 20px;
 }
-a.enter_cab_link:hover{
-    background-color: #019847;
-    color: #fff;
+#cab_animation:hover{
+    animation: none;
+    background-color: transparent;
+    color: #019847;
 }
 a.enter_cab_link img{
     transition: all 0.3s ease-in-out;
-}
-a.enter_cab_link:hover img{
     filter: brightness(0) invert(1);
+}
+#cab_animation:hover img{
+    filter: brightness(1) invert(0);
 }
 a.enter_cab_link i{
     font-style: normal;
@@ -1322,4 +1324,63 @@ a.reg_link span.glyphicon{
     top: 0;
     left: 40px;
     opacity: 0.1;
+}
+#cab_animation{
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+    -moz-animation: flash linear 1.5s infinite;
+    -o-animation: flash linear 1.5s infinite;
+    -ms-animation: flash linear 1.5s infinite;
+}
+@-webkit-keyframes flash {
+    0% { background-color: rgb(1, 152, 71); }
+    20% {background-color: rgba(1, 152, 71, 0.6); }
+    40% { background-color: rgba(1, 152, 71, 0.2); }
+    60% { background-color: rgba(1, 152, 71, 0.2); }
+    80% { background-color: rgba(1, 152, 71, 0.6); }
+    100% { background-color: rgb(1, 152, 71); }
+}
+@-moz-keyframes flash {
+    0% { background-color: rgb(1, 152, 71); }
+    20% {background-color: rgba(1, 152, 71, 0.75); }
+    40% { background-color: rgba(1, 152, 71, 0.5); }
+    60% { background-color: rgba(1, 152, 71, 0.5); }
+    80% { background-color: rgba(1, 152, 71, 0.75); }
+    100% { background-color: rgb(1, 152, 71); }
+}
+@-o-keyframes flash {
+    0% { background-color: rgb(1, 152, 71); }
+    20% {background-color: rgba(1, 152, 71, 0.75); }
+    40% { background-color: rgba(1, 152, 71, 0.5); }
+    60% { background-color: rgba(1, 152, 71, 0.5); }
+    80% { background-color: rgba(1, 152, 71, 0.75); }
+    100% { background-color: rgb(1, 152, 71); }
+}
+@keyframes flash {
+    0% { background-color: rgb(1, 152, 71); }
+    20% {background-color: rgba(1, 152, 71, 0.6); }
+    40% { background-color: rgba(1, 152, 71, 0.4); }
+    60% { background-color: rgba(1, 152, 71, 0.4); }
+    80% { background-color: rgba(1, 152, 71, 0.6); }
+    100% { background-color: rgb(1, 152, 71); }
+}
+
+/** Browser scrollbar*/
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 11px
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 11px
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #3da846;
 }
